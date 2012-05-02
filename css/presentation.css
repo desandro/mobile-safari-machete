@@ -28,8 +28,11 @@ h2 {
 }
 
 
+ul, ol {
+}
+    
 li {
-  margin-bottom: 0.4em;
+  margin-bottom: 0.2em;
 }
     
 #content > * {
@@ -37,6 +40,10 @@ li {
   padding-right: 0.2em;
 }
 
+#content ul, #content ol {
+  padding-left: 1.4em;
+}
+    
 a {
   color: #6D6;
   text-decoration: none;
@@ -57,7 +64,6 @@ img {
 
 #content {
   overflow-x: hidden;
-  text-align: center;
 }
 /*    
 #content ul {
@@ -89,8 +95,6 @@ img {
   padding-left: 0;
 }
 
-.clearfix:before, .clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
 
 /* ---- preso ---- */
 
@@ -136,13 +140,12 @@ html:not(.preso-enabled) .directions {
 #options {
   position: fixed;
   z-index: 100;
-  background: hsla( 0, 0%, 100%, 0.7 );
+  background: hsla( 0, 0%, 0%, 0.4 );
   right: 0;
   top: 0;
   list-style: none;
   margin: 0;
-  padding: 10px;
-  color: #222;
+  padding: 0;
   opacity: 0;
   -webkit-transition: opacity 0.6s;
      -moz-transition: opacity 0.6s;
